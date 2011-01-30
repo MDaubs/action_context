@@ -26,7 +26,3 @@ module ActionContext
   end
 
 end
-
-class ApplicationController
-  include ActionContext
-end

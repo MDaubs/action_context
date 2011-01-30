@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{action_context}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matthew Daubert"]
@@ -19,9 +19,12 @@ Gem::Specification.new do |s|
     "README",
     "Rakefile",
     "VERSION",
+    "action_context.gemspec",
     "init.rb",
     "install.rb",
     "lib/action_context.rb",
+    "pkg/action_context-0.1.0.gem",
+    "rails/init.rb",
     "test/action_context_test.rb",
     "test/helper.rb",
     "uninstall.rb"
