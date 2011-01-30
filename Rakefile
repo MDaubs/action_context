@@ -26,7 +26,9 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "action_context"
+  gem.summary = "Context awareness for Rails 3"
   gem.email = "mdaubert@gmail.com"
   gem.homepage = "http://github.com/MDaubs/action_context"
   gem.authors = ["Matthew Daubert"]
 end
+Jeweler::GemcutterTasks.new
