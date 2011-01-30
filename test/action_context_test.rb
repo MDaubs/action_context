@@ -1,4 +1,5 @@
 require 'helper'
+require 'action_context'
 
 class ActionContextTest < Test::Unit::TestCase
 
