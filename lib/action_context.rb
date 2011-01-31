@@ -4,6 +4,14 @@ module ActionContext
   extend ActiveSupport::Concern
 
   module ClassMethods
+
+    # Sugar to wrap set_context within before_filter
+    def context(context, matcher, *args)
+      before_filter(args) do
+        set_context(context, matcher)
+      end
+    end
+
   end
 
   module InstanceMethods

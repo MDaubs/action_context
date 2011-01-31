@@ -17,4 +17,17 @@ class ActionContextTest < Test::Unit::TestCase
     assert !tc.match_context(:doesntexist, "/qwerty")
   end
 
+  def test_context_method_adds_before_filter
+    assert TestController.respond_to?(:context), "ActionContext does not extend a class method named context"
+    tcb_class = Class.new do
+      include ActionContext
+      def self.before_filter(*args)
+        @@test_args = args
+      end
+      context :gimble, /^\/path/, :only => [:index, :show]
+    end
+    tcb = tcb_class.new
+    assert_equal tcb_class.class_variable_get('@@test_args'), [ [ { :only => [:index, :show] } ] ]
+  end
+
 end
