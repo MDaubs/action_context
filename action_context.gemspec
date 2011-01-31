@@ -23,7 +23,6 @@ Gem::Specification.new do |s|
     "init.rb",
     "install.rb",
     "lib/action_context.rb",
-    "pkg/action_context-0.1.2.gem",
     "rails/init.rb",
     "test/action_context_test.rb",
     "test/helper.rb",
